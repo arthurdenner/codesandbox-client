@@ -965,9 +965,7 @@ export class VSCode extends React.Component<Props> implements Editor {
       ),
       options: {
         inlineClassName: classification.type
-          ? `${classification.kind} ${classification.type}-of-${
-              classification.parentKind
-            }`
+          ? `${classification.kind} ${classification.type}-of-${classification.parentKind}`
           : classification.kind,
       },
     }));
@@ -1160,7 +1158,6 @@ export class VSCode extends React.Component<Props> implements Editor {
 
   render() {
     const { width, height } = this.props;
-
     const options = this.getEditorOptions();
 
     return (

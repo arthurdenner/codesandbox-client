@@ -570,6 +570,10 @@ export default class Content extends React.PureComponent<Props, State> {
                 onChange={this.setCode}
                 onModuleChange={this.setCurrentModule}
                 highlightedLines={this.props.highlightedLines}
+                tsconfig={
+                  parsedConfigurations.typescript &&
+                  parsedConfigurations.typescript.parsed
+                }
               />
             </div>
           </>

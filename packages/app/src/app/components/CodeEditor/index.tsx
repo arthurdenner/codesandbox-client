@@ -210,7 +210,7 @@ export class CodeEditor extends React.PureComponent<
                   content={config.partialSupportDisclaimer}
                   style={{
                     display: 'flex',
-                    'align-items': 'center',
+                    alignItems: 'center',
                   }}
                 >
                   Partially Supported Config{' '}
